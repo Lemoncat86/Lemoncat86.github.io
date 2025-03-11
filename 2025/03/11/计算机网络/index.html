@@ -19,15 +19,15 @@
   <meta name="author" content="Lemoncat86">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Overviewhttps:&#x2F;&#x2F;book.systemsapproach.org&#x2F;foundation&#x2F;requirements.html  Lec-1 Intorduction 1 Lec-2 Introduction 2 Lec-3 Physical Layer Lec-4 Framing and Error Detection Lec-5 ACK Lec-6 MAC(Medium Acc">
+    <meta name="description" content="Overview https:&#x2F;&#x2F;book.systemsapproach.org&#x2F;foundation&#x2F;requirements.html  Lec-1 Introduction 1 Lec-2 Introduction 2 Lec-3 Physical Layer Lec-4 Framing and Error Detection Lec-5 ACK Lec-6 MAC (Medium Ac">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机网络笔记">
 <meta property="og:url" content="http://example.com/2025/03/11/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Overviewhttps:&#x2F;&#x2F;book.systemsapproach.org&#x2F;foundation&#x2F;requirements.html  Lec-1 Intorduction 1 Lec-2 Introduction 2 Lec-3 Physical Layer Lec-4 Framing and Error Detection Lec-5 ACK Lec-6 MAC(Medium Acc">
+<meta property="og:description" content="Overview https:&#x2F;&#x2F;book.systemsapproach.org&#x2F;foundation&#x2F;requirements.html  Lec-1 Introduction 1 Lec-2 Introduction 2 Lec-3 Physical Layer Lec-4 Framing and Error Detection Lec-5 ACK Lec-6 MAC (Medium Ac">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-03-11T08:11:23.942Z">
-<meta property="article:modified_time" content="2025-03-11T08:11:44.044Z">
+<meta property="article:modified_time" content="2025-03-11T08:31:09.821Z">
 <meta property="article:author" content="Lemoncat86">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -44,6 +44,8 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
 
 
 
@@ -233,7 +235,7 @@
         
         
         
-          56 分钟
+          55 分钟
         
       </span>
     
@@ -275,16 +277,17 @@
             
               <div class="markdown-body">
                 
-                <p> <a id="top"></a></p>
-<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a><strong>Overview</strong></h1><p><strong><a target="_blank" rel="noopener" href="https://book.systemsapproach.org/foundation/requirements.html">https://book.systemsapproach.org/foundation/requirements.html</a></strong></p>
+                <p><a id="top"></a></p>
+<h1><strong>Overview</strong></h1>
+<p><strong><a target="_blank" rel="noopener" href="https://book.systemsapproach.org/foundation/requirements.html">https://book.systemsapproach.org/foundation/requirements.html</a></strong></p>
 <ul>
-<li><a href="#lec-1-intorduction-1">Lec-1 Intorduction 1</a></li>
+<li><a href="#lec-1-introduction-1">Lec-1 Introduction 1</a></li>
 <li><a href="#lec-2-introduction-2">Lec-2 Introduction 2</a></li>
 <li><a href="#lec-3-physical-layer">Lec-3 Physical Layer</a></li>
 <li><a href="#lec-4-framing-and-error-detection">Lec-4 Framing and Error Detection</a></li>
 <li><a href="#lec-5-ack">Lec-5 ACK</a></li>
-<li><a href="#lec-6-mac-medium-access-control-1">Lec-6 MAC(Medium Access Control 1)</a></li>
-<li><a href="#lec-7-medium-access-control-2">Lec-7 Medium Access control 2</a></li>
+<li><a href="#lec-6-mac-medium-access-control-1">Lec-6 MAC (Medium Access Control 1)</a></li>
+<li><a href="#lec-7-medium-access-control-2">Lec-7 Medium Access Control 2</a></li>
 <li><a href="#lec-8-%E4%BA%A4%E6%8D%A2%E6%9C%BA-switching">Lec-8 交换机 Switching</a></li>
 <li><a href="#lec-9-internet-protocol-ip%E5%8D%8F%E8%AE%AE">Lec-9 Internet Protocol（IP协议）</a></li>
 <li><a href="#lec-10-rip-and-ospf">Lec-10 RIP and OSPF</a></li>
@@ -294,31 +297,35 @@
 <li><a href="#lec-14-mobile-routing">Lec-14 Mobile Routing</a></li>
 <li><a href="#lec-15-tcp-1">Lec-15 TCP 1</a></li>
 <li><a href="#lec-16-tcp-2">Lec-16 TCP 2</a></li>
-<li><a href="#lec-17-congestiuon-control-1">Lec-17 Congestiuon Control 1</a></li>
+<li><a href="#lec-17-congestion-control-1">Lec-17 Congestion Control 1</a></li>
 <li><a href="#lec-18-congestion-control-2">Lec-18 Congestion Control 2</a></li>
 <li><a href="#lec-19-other-topics-in-transportation-layer">Lec-19 Other Topics in Transportation Layer</a></li>
 <li><a href="#lec-20-rtp-and-rpc">Lec-20 RTP and RPC</a></li>
-<li><a href="#lec-21-data-compression">Lec-21 Data compression</a></li>
+<li><a href="#lec-21-data-compression">Lec-21 Data Compression</a></li>
 <li><a href="#lec-22-dns">Lec-22 DNS</a></li>
 <li><a href="#lec-23-email--web">Lec-23 Email &amp; Web</a></li>
 <li><a href="#lec-24-ftp--p2p">Lec-24 FTP &amp; P2P</a></li>
 <li><a href="#lec-25-network-security">Lec-25 Network Security</a></li>
 </ul>
  <div STYLE="page-break-after: always;"></div>
-
-<h1 id="Lec-1-Intorduction-1"><a href="#Lec-1-Intorduction-1" class="headerlink" title="Lec-1 Intorduction 1"></a>Lec-1 Intorduction 1</h1><ul>
-<li><p><strong>网络，通信，协议</strong></p>
+<h1>Lec-1 Intorduction 1</h1>
+<ul>
+<li>
+<p><strong>网络，通信，协议</strong></p>
 <ul>
 <li>网络 ： 网络是用物理链路将工作站或主机相连在一起，组成数据链路，从而达到资源共享和通信的目的。</li>
 <li>通信 ： 交换数据</li>
 <li>协议 ： 规则</li>
 </ul>
 </li>
-<li><p><strong>网络分层模型</strong></p>
+<li>
+<p><strong>网络分层模型</strong></p>
 <ul>
-<li>OSI七层模型 ：<ul>
+<li>OSI七层模型 ：
+<ul>
 <li>应用层（application）：HTTP,DCTP,FTP,NFS,WAIS,TFTP</li>
-<li>表示层（presentation）:<br>  Telnet,Rlogin,SNMP,Gopher</li>
+<li>表示层（presentation）:<br>
+Telnet,Rlogin,SNMP,Gopher</li>
 <li>会话层（Session）: SMTP,DNS</li>
 <li>传输层（transport）: TCP,UDP</li>
 <li>网络层（Network）: IP,ICMP,ARP,RARP,AKP,UUCP</li>
@@ -331,86 +338,109 @@
 </ul>
 <p><strong>You may want to learn more: <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/380119935">https://zhuanlan.zhihu.com/p/380119935</a></strong></p>
 <ul>
-<li>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-104928-dt-content-rid-9434103_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%201.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-104928-dt-content-rid-9434103_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%201.pdf</a></li>
+<li>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-104928-dt-content-rid-9434103_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%201.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-104928-dt-content-rid-9434103_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 1.pdf</a></li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-2-Introduction-2"><a href="#Lec-2-Introduction-2" class="headerlink" title="Lec-2 Introduction 2"></a>Lec-2 Introduction 2</h1><ul>
-<li><p><strong>带宽（Bandwidth）(Throughput)</strong></p>
+<h1>Lec-2 Introduction 2</h1>
 <ul>
-<li><p>Defnition :  是指在单位时间内（一般指的是1秒钟）能传输的数据量。(The bandwidth of a network is given by the number of bits that can be transmitted over the network in a certain period of time.)</p>
+<li>
+<p><strong>带宽（Bandwidth）(Throughput)</strong></p>
+<ul>
+<li>
+<p>Defnition :  是指在单位时间内（一般指的是1秒钟）能传输的数据量。(The bandwidth of a network is given by the number of bits that can be transmitted over the network in a certain period of time.)</p>
 </li>
-<li><p>(单位)Unit : $bps, kpbs(10^3),Mps(10^6),Gbps(10^9)$</p>
+<li>
+<p>(单位)Unit : <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mi>p</mi><mi>s</mi><mo separator="true">,</mo><mi>k</mi><mi>p</mi><mi>b</mi><mi>s</mi><mo stretchy="false">(</mo><msup><mn>10</mn><mn>3</mn></msup><mo stretchy="false">)</mo><mo separator="true">,</mo><mi>M</mi><mi>p</mi><mi>s</mi><mo stretchy="false">(</mo><msup><mn>10</mn><mn>6</mn></msup><mo stretchy="false">)</mo><mo separator="true">,</mo><mi>G</mi><mi>b</mi><mi>p</mi><mi>s</mi><mo stretchy="false">(</mo><msup><mn>10</mn><mn>9</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">bps, kpbs(10^3),Mps(10^6),Gbps(10^9)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal">b</span><span class="mord mathnormal">p</span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">p</span><span class="mord mathnormal">b</span><span class="mord mathnormal">s</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">Mp</span><span class="mord mathnormal">s</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">G</span><span class="mord mathnormal">b</span><span class="mord mathnormal">p</span><span class="mord mathnormal">s</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">9</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
 </li>
-<li><p>e.g. $100Mps$ Ethernet Link means takes $\frac{1}{100*10^6}$ seconds to transmit one bit.</p>
+<li>
+<p>e.g. <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mi>M</mi><mi>p</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">100Mps</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">100</span><span class="mord mathnormal">Mp</span><span class="mord mathnormal">s</span></span></span></span> Ethernet Link means takes <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>100</mn><mo>∗</mo><msup><mn>10</mn><mn>6</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{100*10^6}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">100</span><span class="mbin mtight">∗</span><span class="mord mtight">1</span><span class="mord mtight"><span class="mord mtight">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7463em;"><span style="top:-2.786em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">6</span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span> seconds to transmit one bit.</p>
 </li>
 </ul>
 </li>
-<li><p><strong>延迟（Latency）（Delay）</strong></p>
+<li>
+<p><strong>延迟（Latency）（Delay）</strong></p>
 <ul>
-<li><p><strong>Definition ：The latency of a network is the time that takes a bit to travel from one end of a network to the other.</strong></p>
+<li>
+<p><strong>Definition ：The latency of a network is the time that takes a bit to travel from one end of a network to the other.</strong></p>
 </li>
-<li><p>Unit : $s,ms(10^{-3}),us(10^{-6}),ns(10^{-9})$</p>
+<li>
+<p>Unit : <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo separator="true">,</mo><mi>m</mi><mi>s</mi><mo stretchy="false">(</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>3</mn></mrow></msup><mo stretchy="false">)</mo><mo separator="true">,</mo><mi>u</mi><mi>s</mi><mo stretchy="false">(</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo stretchy="false">)</mo><mo separator="true">,</mo><mi>n</mi><mi>s</mi><mo stretchy="false">(</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>9</mn></mrow></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">s,ms(10^{-3}),us(10^{-6}),ns(10^{-9})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal">s</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">m</span><span class="mord mathnormal">s</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">3</span></span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">u</span><span class="mord mathnormal">s</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">6</span></span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">n</span><span class="mord mathnormal">s</span><span class="mopen">(</span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">9</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
 </li>
-<li><p>Round-Trip Time(RTT) : 2x(Propagation Delay(传播延迟) + Queueing Delay(拥塞延迟))<br>  <strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/solihawk/article/details/129248379">https://blog.csdn.net/solihawk/article/details/129248379</a></strong></p>
+<li>
+<p>Round-Trip Time(RTT) : 2x(Propagation Delay(传播延迟) + Queueing Delay(拥塞延迟))<br>
+<strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/solihawk/article/details/129248379">https://blog.csdn.net/solihawk/article/details/129248379</a></strong></p>
 </li>
-<li><p>计算：</p>
+<li>
+<p>计算：</p>
 <ul>
-<li><strong>Latency &#x3D; Transmit Delay + Propagation Delay + Queueing Delay</strong></li>
-<li>Transmit Delay &#x3D; TransferSize&#x2F;Bandwidth</li>
-<li>Propagation Delay &#x3D; Distance&#x2F;SpeedofSigna</li>
-<li>Effective Bandwidth（有效带宽也叫吞吐量） &#x3D; TransferSize&#x2F;Latency</li>
+<li><strong>Latency = Transmit Delay + Propagation Delay + Queueing Delay</strong></li>
+<li>Transmit Delay = TransferSize/Bandwidth</li>
+<li>Propagation Delay = Distance/SpeedofSigna</li>
+<li>Effective Bandwidth（有效带宽也叫吞吐量） = TransferSize/Latency</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>带宽越大，延迟一定越低吗？带宽越小，延迟一定比带宽大的高吗？</p>
+<li>
+<p>带宽越大，延迟一定越低吗？带宽越小，延迟一定比带宽大的高吗？</p>
 </li>
-<li><p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-106871-dt-content-rid-9440965_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%202.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-106871-dt-content-rid-9440965_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%202.pdf</a></p>
+<li>
+<p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-106871-dt-content-rid-9440965_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%202.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-106871-dt-content-rid-9440965_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 2.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-3-Physical-Layer"><a href="#Lec-3-Physical-Layer" class="headerlink" title="Lec-3 Physical Layer"></a>Lec-3 Physical Layer</h1><ul>
-<li><p>Transmission Method:</p>
+<h1>Lec-3 Physical Layer</h1>
 <ul>
-<li>基带传输(Baseband Transimission)<ul>
+<li>
+<p>Transmission Method:</p>
+<ul>
+<li>基带传输(Baseband Transimission)
+<ul>
 <li>No carrier wave,transimit bits or coded stream directly to the medium,might not be long distance.</li>
 <li>e.g. usb,Ethernet,HDMI</li>
-<li>Symbol Rate :&#x3D; Baud Rate(波特率)<ul>
-<li>$R_b &#x3D; R_Blog_2M$</li>
+<li>Symbol Rate := Baud Rate(波特率)
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>b</mi></msub><mo>=</mo><msub><mi>R</mi><mi>B</mi></msub><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mi>M</mi></mrow><annotation encoding="application/x-tex">R_b = R_Blog_2M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span></span></span></span></li>
 <li>M : the number of different symbols</li>
-<li>$R_b$ : Baud Rate</li>
-<li>$R_b$ : bit Rate</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">R_b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> : Baud Rate</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">R_b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.0077em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> : bit Rate</li>
 </ul>
 </li>
-<li>Clock Recovery<ul>
-<li>Synchronous Transmission<ul>
+<li>Clock Recovery
+<ul>
+<li>Synchronous Transmission
+<ul>
 <li>Transimit the clock directly</li>
 <li>low processing</li>
 </ul>
 </li>
-<li>Asychronous Transmission<ul>
+<li>Asychronous Transmission
+<ul>
 <li>Recover the clock from data signal</li>
-<li>Use line encoder&#x2F;decoder, high efficiency</li>
+<li>Use line encoder/decoder, high efficiency</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li>频带传输(Passband Modulation)<ul>
+<li>频带传输(Passband Modulation)
+<ul>
 <li>Good transmission properties.</li>
 <li>Multiplexing</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>极限在哪里？（Upper Bound of Throughput）</p>
+<li>
+<p>极限在哪里？（Upper Bound of Throughput）</p>
 <ul>
-<li><strong>Shannon-Hartley Theorem</strong> ： $C &#x3D; Blog_2(1+\frac{S}{N})$<ul>
+<li><strong>Shannon-Hartley Theorem</strong> ： <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mi>B</mi><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>S</mi><mi>N</mi></mfrac><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">C = Blog_2(1+\frac{S}{N})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">Bl</span><span class="mord mathnormal">o</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.2173em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8723em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05764em;">S</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span></span></span></span>
+<ul>
 <li>C : cahnnel capacity</li>
 <li>B : Bandwidth</li>
 <li>S : Signal Power</li>
@@ -419,53 +449,64 @@
 </li>
 </ul>
 </li>
-<li><p>歧义(discrimination) ：Bandwidth</p>
+<li>
+<p>歧义(discrimination) ：Bandwidth</p>
 <ul>
 <li>Rate ： throughput (bps)</li>
 <li>Spectrum ：the width of the occupied spectrum(Hz)</li>
 </ul>
 </li>
-<li><p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-107292-dt-content-rid-9449960_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%203.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-107292-dt-content-rid-9449960_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%203.pdf</a></p>
+<li>
+<p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-107292-dt-content-rid-9449960_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%203.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-107292-dt-content-rid-9449960_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 3.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-4-Framing-and-Error-Detection"><a href="#Lec-4-Framing-and-Error-Detection" class="headerlink" title="Lec-4  Framing and Error Detection"></a>Lec-4  Framing and Error Detection</h1><ul>
-<li><p>Quantifying Error</p>
+<h1>Lec-4  Framing and Error Detection</h1>
 <ul>
-<li>Shannon capacity gives a thoughput upper bound:<ul>
-<li>Actual throughput $&lt;&lt;$ chnnel capacity</li>
+<li>
+<p>Quantifying Error</p>
+<ul>
+<li>Shannon capacity gives a thoughput upper bound:
+<ul>
+<li>Actual throughput <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo><mo>&lt;</mo></mrow><annotation encoding="application/x-tex">&lt;&lt;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;&lt;</span></span></span></span> chnnel capacity</li>
 </ul>
 </li>
-<li>Bit error rate(BER) : Error bits&#x2F;transmitted bits</li>
+<li>Bit error rate(BER) : Error bits/transmitted bits</li>
 </ul>
 </li>
-<li><p>Handling Error</p>
+<li>
+<p>Handling Error</p>
 <ul>
-<li>错误检测(Error detection)<ul>
-<li><p>奇偶检验(Parity Check)</p>
+<li>错误检测(Error detection)
+<ul>
+<li>
+<p>奇偶检验(Parity Check)</p>
 <ul>
 <li>偶校验：保证“1”的个数为偶数</li>
 <li>奇校验：保证“1”的个数为奇数</li>
 <li>2D奇偶校验：添加一个纵向校验(包括校验位)</li>
 </ul>
 </li>
-<li><p>和检测(Checksum)</p>
+<li>
+<p>和检测(Checksum)</p>
 <ul>
 <li>选择区域内除“和”以外的数值相加，检测是否等于“和”(使用 one’s complement)</li>
 </ul>
 </li>
-<li><p><strong>Cyclic Redundancy Check(CRC)</strong></p>
+<li>
+<p><strong>Cyclic Redundancy Check(CRC)</strong></p>
 <ul>
 <li>定义： Generator？Message？Remainder？</li>
 <li>Generator(crc 纠错码，除数)</li>
 <li>Message(信息，被除数)</li>
 <li>Remainder(检验码，余数)</li>
-<li>对比：<ul>
+<li>对比：
+<ul>
 <li>CRC vs Checksum</li>
 <li>CRC protects more bits</li>
-<li>CRC takes more time&#x2F;resource</li>
+<li>CRC takes more time/resource</li>
 <li>CRC vs Hash</li>
 <li>CRC does not protect data integration</li>
 <li>Hash functions are more complex than CRC</li>
@@ -476,27 +517,34 @@
 </li>
 </ul>
 </li>
-<li>纠正错误(Error Correction)<ul>
+<li>纠正错误(Error Correction)
+<ul>
 <li>Hamming code</li>
 <li>others ： convolutional code,fountain code.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>Framing</p>
+<li>
+<p>Framing</p>
 <ul>
-<li><p>Multiplexing Approaches :</p>
+<li>
+<p>Multiplexing Approaches :</p>
 <ul>
-<li>Fixed Multiplexing(固定多路复用)<ul>
-<li>STDM，FDM<ul>
+<li>Fixed Multiplexing(固定多路复用)
+<ul>
+<li>STDM，FDM
+<ul>
 <li>Predictable performance</li>
 <li>Expensive</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Statistical Multiplexing(统计多路复用)<ul>
-<li>Packet Switching<ul>
+<li>Statistical Multiplexing(统计多路复用)
+<ul>
+<li>Packet Switching
+<ul>
 <li>performance is random</li>
 <li>cheap</li>
 </ul>
@@ -506,15 +554,19 @@
 <li><strong><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/649386693">https://zhuanlan.zhihu.com/p/649386693</a></strong></li>
 </ul>
 </li>
-<li><p>目的 ： 帮助接受方辨别传输的开始和结束</p>
+<li>
+<p>目的 ： 帮助接受方辨别传输的开始和结束</p>
 </li>
-<li><p>设计 ：</p>
+<li>
+<p>设计 ：</p>
 <ul>
-<li>Detection<ul>
+<li>Detection
+<ul>
 <li>Sential-based</li>
 </ul>
 </li>
-<li>Termination<ul>
+<li>Termination
+<ul>
 <li>Counting-based</li>
 </ul>
 </li>
@@ -522,80 +574,98 @@
 </li>
 </ul>
 </li>
-<li><p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-108025-dt-content-rid-9465031_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%204.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-108025-dt-content-rid-9465031_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%204.pdf</a></p>
+<li>
+<p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-108025-dt-content-rid-9465031_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%204.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-108025-dt-content-rid-9465031_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 4.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-5-ACK"><a href="#Lec-5-ACK" class="headerlink" title="Lec-5 ACK"></a>Lec-5 ACK</h1><ul>
-<li><p>停等协议(stop and wait)</p>
+<h1>Lec-5 ACK</h1>
+<ul>
+<li>
+<p>停等协议(stop and wait)</p>
 <ul>
 <li>发送方每次只发送一个包，同时启动一个定时器。如果定时器超时依然没有收到这个包的 ACK，则认为丢包，重传这个包。如果收到 ACK，则重置定时器并发送下一个包。</li>
 <li>问题 ： 丢包的判断和传输效率非常低。</li>
 </ul>
 </li>
-<li><p>NACK</p>
+<li>
+<p>NACK</p>
 <ul>
 <li>接收方定时把所有未收到的包序号通过反馈报文通知到发送方进行重传。</li>
 <li>改进： 减少的反馈包的频率和带宽占用，同时也能比较及时地通知发送方进行丢包重传。</li>
 <li>缺点 ： 如果帧(frame)丢失发生在发送端空闲后,接收方没有办法注意丢失。</li>
 </ul>
 </li>
-<li><p>滑窗协议(Sliding windows)</p>
+<li>
+<p>滑窗协议(Sliding windows)</p>
 <ul>
-<li>发送方维持着一个一定大小的发送窗口，位于发送窗口内的所有包可以连续发送出去，中途不需要依次等待对方的 ACK 确认。<br>  接收方通常采用 <strong>积累确认模式()</strong>，即不必对每一个包逐个发送 ACK，而是在连续收到几个包后，对顺序到达的最后一个包序号发送 ACK，表示：这个包及之前的所有包都已正确收到了。</li>
-<li>Window Size :<ul>
-<li>send window size : pipeline depth<ul>
+<li>发送方维持着一个一定大小的发送窗口，位于发送窗口内的所有包可以连续发送出去，中途不需要依次等待对方的 ACK 确认。<br>
+接收方通常采用 <strong>积累确认模式()</strong>，即不必对每一个包逐个发送 ACK，而是在连续收到几个包后，对顺序到达的最后一个包序号发送 ACK，表示：这个包及之前的所有包都已正确收到了。</li>
+<li>Window Size :
+<ul>
+<li>send window size : pipeline depth
+<ul>
 <li>Delay x Bandwidth</li>
 </ul>
 </li>
 <li>Receive window size : Flow control</li>
 </ul>
 </li>
-<li>MaxSeqNum(最大序列号)：<ul>
-<li>Receive window size &#x3D;&#x3D; 1:<ul>
-<li>Maxseqnum $\geq$ send window size + 1</li>
-</ul>
-</li>
-<li>Send window size &#x3D;&#x3D; receive window size :<ul>
-<li>Maxseqnum $\geq$ 2*send window size</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>Learn more : <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/104322256%3E">https://zhuanlan.zhihu.com/p/104322256&gt;</a></strong></p>
+<li>MaxSeqNum(最大序列号)：
 <ul>
-<li>PPT: <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-108684-dt-content-rid-9505422_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%205%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-108684-dt-content-rid-9505422_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%205%281%29.pdf</a></li>
+<li>Receive window size == 1:
+<ul>
+<li>Maxseqnum <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\geq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span></span></span></span> send window size + 1</li>
+</ul>
+</li>
+<li>Send window size == receive window size :
+<ul>
+<li>Maxseqnum <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\geq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≥</span></span></span></span> 2*send window size</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Learn more : <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/104322256">https://zhuanlan.zhihu.com/p/104322256</a>&gt;</strong></p>
+<ul>
+<li>PPT: <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-108684-dt-content-rid-9505422_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%205%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-108684-dt-content-rid-9505422_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 5(1).pdf</a></li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-6-MAC-Medium-Access-Control-1"><a href="#Lec-6-MAC-Medium-Access-Control-1" class="headerlink" title="Lec-6 MAC(Medium Access Control 1)"></a>Lec-6 MAC(Medium Access Control 1)</h1><ul>
-<li><p>什么是MAC层？</p>
+<h1>Lec-6 MAC(Medium Access Control 1)</h1>
+<ul>
+<li>
+<p>什么是MAC层？</p>
 <ul>
 <li>MAC层是数据链路层的子层之一</li>
 <li>作用：决定多个节点如何共享多路复用资源</li>
 </ul>
 </li>
-<li><p>The Medium access problem</p>
+<li>
+<p>The Medium access problem</p>
 <ul>
-<li><p>Two types of Physical Links</p>
+<li>
+<p>Two types of Physical Links</p>
 <ul>
 <li>Private: point-to-point link between nodes e.g. USB</li>
 <li><strong>Broadcast(广播)</strong>：Shared communication medium,may occur collision e.g.WiFI,Legacy Ethernet</li>
 </ul>
 </li>
-<li><p>处理冲突现有的实现：</p>
+<li>
+<p>处理冲突现有的实现：</p>
 <ul>
-<li>Fixed Partitioning and Assignment(固定分区分配)<ul>
+<li>Fixed Partitioning and Assignment(固定分区分配)
+<ul>
 <li>Avoid collisions e.g. TDMA,FDMA in 4G</li>
 </ul>
 </li>
-<li>Random Access<ul>
+<li>Random Access
+<ul>
 <li>Allow collisions e.g. CSMA</li>
 </ul>
 </li>
@@ -603,34 +673,43 @@
 </li>
 </ul>
 </li>
-<li><p>MAC协议</p>
+<li>
+<p>MAC协议</p>
 <ul>
-<li><p>Transmit and Pray：直接发送数据，祈祷数据能够成功到达目标节点</p>
+<li>
+<p>Transmit and Pray：直接发送数据，祈祷数据能够成功到达目标节点</p>
 <ul>
 <li>缺点：高吞吐量会有非常多的冲突</li>
 </ul>
 </li>
-<li><p>Slotted ALOHA：是一种改进版的纯ALOHA协议，旨在提高通信网络的效率。在这个版本中，信道被划分为小的、固定长度的时间槽，用户只能在每个时间槽的开始时发送数据</p>
+<li>
+<p>Slotted ALOHA：是一种改进版的纯ALOHA协议，旨在提高通信网络的效率。在这个版本中，信道被划分为小的、固定长度的时间槽，用户只能在每个时间槽的开始时发送数据</p>
 </li>
-<li><p>CSMA(Carrier Sense Multiple Access)</p>
+<li>
+<p>CSMA(Carrier Sense Multiple Access)</p>
 <ul>
-<li><p>Listen before Transmit</p>
+<li>
+<p>Listen before Transmit</p>
 <ul>
 <li>if the channel is sensed idle : transmit the entire frame</li>
 <li>if the cheannel is sensed busy: defer the transmission</li>
 </ul>
 </li>
-<li><p>Collisions can still occur :Due to propagation delay, when collison occurs :entire packet wasted</p>
+<li>
+<p>Collisions can still occur :Due to propagation delay, when collison occurs :entire packet wasted</p>
 </li>
 </ul>
 </li>
-<li><p>CSMA + Collision Detection(CSMA&#x2F;CD)</p>
+<li>
+<p>CSMA + Collision Detection(CSMA/CD)</p>
 <ul>
-<li><p>keep listening to the channel while transmitting</p>
+<li>
+<p>keep listening to the channel while transmitting</p>
 </li>
-<li><p>Abort the transition if collision is detected</p>
+<li>
+<p>Abort the transition if collision is detected</p>
 <ul>
-<li>Opt1 : transmitted signal !&#x3D; sensed signal</li>
+<li>Opt1 : transmitted signal != sensed signal</li>
 <li>Opt2 : energy detection</li>
 <li>Then ,retransmit</li>
 </ul>
@@ -639,15 +718,19 @@
 </li>
 </ul>
 </li>
-<li><p>When collisions occur ?</p>
+<li>
+<p>When collisions occur ?</p>
 <ul>
-<li>Exponential Backoff<ul>
-<li>After $m_{th}$ collisions ,chooses K at random from [0,$2^{m-1}$]<ul>
-<li>if m &gt; 11: choose K at random from [0,1024]<ul>
+<li>Exponential Backoff
+<ul>
+<li>After <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mrow><mi>t</mi><mi>h</mi></mrow></msub></mrow><annotation encoding="application/x-tex">m_{th}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mord mathnormal mtight">h</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> collisions ,chooses K at random from [0,<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mrow><mi>m</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{m-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">m</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>]
+<ul>
+<li>if m &gt; 11: choose K at random from [0,1024]
+<ul>
 <li>so why maximum number of nodes is 1024 ?</li>
 </ul>
 </li>
-<li>if m&#x3D; 16: done, go idle</li>
+<li>if m= 16: done, go idle</li>
 </ul>
 </li>
 </ul>
@@ -655,68 +738,86 @@
 </ul>
 </li>
 </ul>
-<p>-PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109056-dt-content-rid-9563556_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%206%282%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109056-dt-content-rid-9563556_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%206%282%29.pdf</a></p>
+<p>-PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109056-dt-content-rid-9563556_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%206%282%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109056-dt-content-rid-9563556_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 6(2).pdf</a></p>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-7-Medium-Access-control-2"><a href="#Lec-7-Medium-Access-control-2" class="headerlink" title="Lec-7 Medium Access control 2"></a>Lec-7 Medium Access control 2</h1><ul>
-<li><p>Why not choose CSMA&#x2F;CA in Wireless Situation?</p>
+<h1>Lec-7 Medium Access control 2</h1>
+<ul>
+<li>
+<p>Why not choose CSMA/CA in Wireless Situation?</p>
 <ul>
 <li>Hidden Terminal : A 不能发现影响接收端 B 的信号</li>
 <li>Exposed Terminal ： A 发现了，但是该信号不影响接收端 B</li>
 </ul>
 </li>
-<li><p>RTS&#x2F;CTS协议</p>
+<li>
+<p>RTS/CTS协议</p>
 <ul>
-<li><p>首先，A向B发送RTS信号，表明A要向B发送若干数据，B收到RTS后，向所有基站发出CTS信号，表明已准备就绪，A可以发送，而其余欲向B发送数据的基站则暂停发送；双方在成功交换RTS&#x2F;CTS信号（即完成握手）后才开始真正的数据传递，保证了多个互不可见的发送站点同时向同一接收站点发送信号时，实际只能是收到接收站点回应CTS的那个站点能够进行发送，避免了冲突发生。即使有冲突发生，也只是在发送RTS时，这种情况下，由于收不到接收站点的CTS消息，大家再回头用DCF提供的竞争机制，分配一个随机退守定时值，等待下一次介质空闲DIFS后竞争发送RTS，直到成功为止。</p>
+<li>
+<p>首先，A向B发送RTS信号，表明A要向B发送若干数据，B收到RTS后，向所有基站发出CTS信号，表明已准备就绪，A可以发送，而其余欲向B发送数据的基站则暂停发送；双方在成功交换RTS/CTS信号（即完成握手）后才开始真正的数据传递，保证了多个互不可见的发送站点同时向同一接收站点发送信号时，实际只能是收到接收站点回应CTS的那个站点能够进行发送，避免了冲突发生。即使有冲突发生，也只是在发送RTS时，这种情况下，由于收不到接收站点的CTS消息，大家再回头用DCF提供的竞争机制，分配一个随机退守定时值，等待下一次介质空闲DIFS后竞争发送RTS，直到成功为止。</p>
 </li>
-<li><p>并没有完全解决隐藏和暴露问题</p>
+<li>
+<p>并没有完全解决隐藏和暴露问题</p>
 </li>
-<li><p><strong>see <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39270587/article/details/124845883">https://blog.csdn.net/qq_39270587/article/details/124845883</a></strong></p>
+<li>
+<p><strong>see <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39270587/article/details/124845883">https://blog.csdn.net/qq_39270587/article/details/124845883</a></strong></p>
 </li>
 </ul>
 </li>
-<li><p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109062-dt-content-rid-9563546_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%207%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109062-dt-content-rid-9563546_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%207%281%29.pdf</a></p>
+<li>
+<p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109062-dt-content-rid-9563546_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%207%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109062-dt-content-rid-9563546_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 7(1).pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-8-交换机-Switching"><a href="#Lec-8-交换机-Switching" class="headerlink" title="Lec-8  交换机 Switching"></a>Lec-8  交换机 Switching</h1><ul>
-<li><p>What is switch ?</p>
+<h1>Lec-8  交换机 Switching</h1>
 <ul>
-<li>A multi-input,multi-output device<ul>
+<li>
+<p>What is switch ?</p>
+<ul>
+<li>A multi-input,multi-output device
+<ul>
 <li>Function: transfer packets from an input to one or more outputs</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>Forwarding Table</p>
+<li>
+<p>Forwarding Table</p>
 <ul>
-<li>How to obtain ?<ul>
+<li>How to obtain ?
+<ul>
 <li>forward the frame to all output ports</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>Cycles in Ethernet</p>
+<li>
+<p>Cycles in Ethernet</p>
 <ul>
-<li><p>Why this occurs ?</p>
+<li>
+<p>Why this occurs ?</p>
 <ul>
 <li>On purpose : introduce redundancy</li>
 <li>Not on purpose : wrong network management</li>
 </ul>
 </li>
-<li><p>可能会导致广播风暴(Broadcast storm)</p>
+<li>
+<p>可能会导致广播风暴(Broadcast storm)</p>
 <ul>
 <li>什么是广播风暴 ？ 是指当广播数据充斥网络无法处理，并占用大量网络带宽，导致正常业务不能运行，甚至彻底瘫痪，这就发生了“广播风暴”。一个数据帧或包被传输到本地网段（由广播域定义）上的每个节点就是广播；由于网络拓扑的设计和连接问题，或其他原因导致广播在网段内大量复制，传播数据帧，导致网络性能下降，甚至网络瘫痪。</li>
 </ul>
 </li>
-<li><p>处理循环</p>
+<li>
+<p>处理循环</p>
 <ul>
-<li><p>Break the cycles ： Tree</p>
+<li>
+<p>Break the cycles ： Tree</p>
 </li>
-<li><p>Distributed Spanning Tree Algorithm</p>
+<li>
+<p>Distributed Spanning Tree Algorithm</p>
 <ul>
 <li>A spanning tree is a sub-graph of this graph that covers all the vertices but contains no cycles.Each switch decides the ports over which it is and is not willing to forward frames</li>
 </ul>
@@ -725,44 +826,58 @@
 </li>
 </ul>
 </li>
-<li><p>交换方法(switching methods)</p>
+<li>
+<p>交换方法(switching methods)</p>
 <ul>
-<li>Datagram(数据报)<ul>
+<li>Datagram(数据报)
+<ul>
 <li><strong>should know how to read the forwarding table</strong></li>
 </ul>
 </li>
-<li>Virtual circuit(虚拟链路)<ul>
+<li>Virtual circuit(虚拟链路)
+<ul>
 <li><strong>should know how to read the Virtual circuit table</strong></li>
 </ul>
 </li>
-<li>Source Routing<ul>
+<li>Source Routing
+<ul>
 <li>a set of outport round</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109804-dt-content-rid-9598509_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%208.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109804-dt-content-rid-9598509_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%208.pdf</a></p>
+<li>
+<p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109804-dt-content-rid-9598509_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%208.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109804-dt-content-rid-9598509_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 8.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-9-Internet-Protocol（IP协议）"><a href="#Lec-9-Internet-Protocol（IP协议）" class="headerlink" title="Lec-9 Internet Protocol（IP协议）"></a>Lec-9 Internet Protocol（IP协议）</h1><ul>
-<li><p>Ip adress</p>
+<h1>Lec-9 Internet Protocol（IP协议）</h1>
 <ul>
-<li><p>Class addressing</p>
+<li>
+<p>Ip adress</p>
 <ul>
-<li><p>class A : | 0 | 7bits Network | 24bits host | $2^{24}-2$</p>
+<li>
+<p>Class addressing</p>
+<ul>
+<li>
+<p>class A : | 0 | 7bits Network | 24bits host | <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>24</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2^{24}-2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">24</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></p>
 </li>
-<li><p>class B : | 10 | 14bits Network | 16bits host | $2^{16}-2$</p>
+<li>
+<p>class B : | 10 | 14bits Network | 16bits host | <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>16</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2^{16}-2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">16</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></p>
 </li>
-<li><p>class C : | 110 | 21bits Network | 8bits host | $2^{8}-2$</p>
+<li>
+<p>class C : | 110 | 21bits Network | 8bits host | <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>8</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2^{8}-2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">8</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></p>
 </li>
-<li><p>为什么减去 2 ？ 全0(无效)和全1(广播)</p>
+<li>
+<p>为什么减去 2 ？ 全0(无效)和全1(广播)</p>
 </li>
-<li><p>Each host has a unique IP address，Hosts in the same physical network have the same network part</p>
+<li>
+<p>Each host has a unique IP address，Hosts in the same physical network have the same network part</p>
 </li>
-<li><p>缺点：</p>
+<li>
+<p>缺点：</p>
 <ul>
 <li>host和address之间的权衡</li>
 <li>Forwarding table 很大</li>
@@ -770,63 +885,82 @@
 </li>
 </ul>
 </li>
-<li><p>Subnet Mask(子网掩码)</p>
+<li>
+<p>Subnet Mask(子网掩码)</p>
 <ul>
 <li>创建子网：使得Ip地址变为三层结构：一个网络可以又若干子网，子网下面可以有若干主机</li>
 <li><strong>Learn more ： <a target="_blank" rel="noopener" href="https://blog.csdn.net/piggy_0204/article/details/86759924">https://blog.csdn.net/piggy_0204/article/details/86759924</a></strong></li>
 </ul>
 </li>
-<li><p>CIDR（无类别域间路由）</p>
+<li>
+<p>CIDR（无类别域间路由）</p>
 <ul>
-<li><p>表示方法：a.b.c.d&#x2F;x</p>
+<li>
+<p>表示方法：a.b.c.d/x</p>
 <ul>
 <li>x为掩码为1的个数，32-x剩下的为主机地址，a.b.c.d代表网络地址</li>
 </ul>
 </li>
-<li><p>using longest prefix matching(最长匹配（掩码长度）)</p>
+<li>
+<p>using longest prefix matching(最长匹配（掩码长度）)</p>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>碎片和重组（Fragmentation and Reassembly）</p>
+<li>
+<p>碎片和重组（Fragmentation and Reassembly）</p>
 <ul>
 <li>Network links have MTU (max.transfer size) ，so Large datagram is divided (“fragmented”) within net</li>
-<li>offset &#x3D; 前面所有数据和&#x2F;8</li>
+<li>offset = 前面所有数据和/8</li>
 <li>每一个数据包的大小取MTU中8的最大倍数</li>
 </ul>
 </li>
-<li><p>Router</p>
+<li>
+<p>Router</p>
 <ul>
-<li><p>路由器是一种连接两个或多个网络的硬件设备，可以根据数据包的目的地址选择最佳的传输路径。（Each router contains multiple network interfaces，Each port has the IP address of the connected network）</p>
+<li>
+<p>路由器是一种连接两个或多个网络的硬件设备，可以根据数据包的目的地址选择最佳的传输路径。（Each router contains multiple network interfaces，Each port has the IP address of the connected network）</p>
 </li>
-<li><p>Each host has a default router</p>
+<li>
+<p>Each host has a default router</p>
 </li>
-<li><p>Routers may also have default router</p>
+<li>
+<p>Routers may also have default router</p>
 </li>
 </ul>
 </li>
-<li><p>DHCP ：<br>  -DHCP是动态主机配置协议（Dynamic Host Configuration Protocol）的缩写，它是一种用于在局域网中自动分配IP地址和其他网络参数的协议。DHCP可以简化网络管理和维护，提高IP地址的利用率，避免地址冲突和配置错误。DHCP的工作原理是，当一个客户端需要连接网络时，它会向DHCP服务器发送一个请求报文，DHCP服务器会从一个地址池中选择一个合适的IP地址，以及相应的子网掩码、网关、DNS等信息，发送给客户端。客户端收到后，就可以使用这些信息与网络通信。DHCP还可以为客户端提供租约期限，即分配的IP地址的有效时间，客户端可以在租约到期前向服务器请求续约，或者在不需要使用时释放地址。</p>
+<li>
+<p>DHCP ：<br>
+-DHCP是动态主机配置协议（Dynamic Host Configuration Protocol）的缩写，它是一种用于在局域网中自动分配IP地址和其他网络参数的协议。DHCP可以简化网络管理和维护，提高IP地址的利用率，避免地址冲突和配置错误。DHCP的工作原理是，当一个客户端需要连接网络时，它会向DHCP服务器发送一个请求报文，DHCP服务器会从一个地址池中选择一个合适的IP地址，以及相应的子网掩码、网关、DNS等信息，发送给客户端。客户端收到后，就可以使用这些信息与网络通信。DHCP还可以为客户端提供租约期限，即分配的IP地址的有效时间，客户端可以在租约到期前向服务器请求续约，或者在不需要使用时释放地址。</p>
 </li>
-<li><p>ARP :</p>
+<li>
+<p>ARP :</p>
 <ul>
-<li><p>概念 ： ARP（地址解析协议）是一种通信协议，用于将网络地址，如IP地址，映射到物理地址，如MAC地址。它是TCP&#x2F;IP协议套件的一个重要组成部分，它使局域网（LAN）上的设备能够相互通信。</p>
+<li>
+<p>概念 ： ARP（地址解析协议）是一种通信协议，用于将网络地址，如IP地址，映射到物理地址，如MAC地址。它是TCP/IP协议套件的一个重要组成部分，它使局域网（LAN）上的设备能够相互通信。</p>
 </li>
-<li><p>工作原理 ： 一个设备需要发送数据包给另一个设备时，它会先查看自己的ARP缓存表，看是否有目的IP地址对应的MAC地址。如果有，就直接使用该MAC地址进行数据传输。如果没有，就向本地网络广播一个ARP请求报文，询问谁拥有目的IP地址，并等待ARP应答报文。收到应答报文后，发送方会将目的IP地址和MAC地址的映射关系存入自己的ARP缓存表，并使用该MAC地址进行数据传输。</p>
+<li>
+<p>工作原理 ： 一个设备需要发送数据包给另一个设备时，它会先查看自己的ARP缓存表，看是否有目的IP地址对应的MAC地址。如果有，就直接使用该MAC地址进行数据传输。如果没有，就向本地网络广播一个ARP请求报文，询问谁拥有目的IP地址，并等待ARP应答报文。收到应答报文后，发送方会将目的IP地址和MAC地址的映射关系存入自己的ARP缓存表，并使用该MAC地址进行数据传输。</p>
 </li>
 </ul>
 </li>
-<li><p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109996-dt-content-rid-9622123_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%209.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109996-dt-content-rid-9622123_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%209.pdf</a></p>
+<li>
+<p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109996-dt-content-rid-9622123_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%209.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-109996-dt-content-rid-9622123_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 9.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-10-RIP-and-OSPF"><a href="#Lec-10-RIP-and-OSPF" class="headerlink" title="Lec-10 RIP and OSPF"></a>Lec-10 RIP and OSPF</h1><ul>
-<li><p>RIP协议</p>
+<h1>Lec-10 RIP and OSPF</h1>
 <ul>
-<li>Use distance vector algorith<ul>
-<li>Distance Vector Algorithm<ul>
+<li>
+<p>RIP协议</p>
+<ul>
+<li>Use distance vector algorith
+<ul>
+<li>Distance Vector Algorithm
+<ul>
 <li>Every T seconds each router sends its table to its neighbor</li>
 <li>Each router then updates its table based on the new information</li>
 </ul>
@@ -836,97 +970,123 @@
 <li>记录下一跳（next hop）</li>
 </ul>
 </li>
-<li><p>OSPF协议</p>
+<li>
+<p>OSPF协议</p>
 <ul>
-<li>Link state routing<ul>
-<li>Based on <strong>Dijkstra’s algorithm</strong>：computes shortest paths from one node<br>  (source) to all other nodes</li>
+<li>Link state routing
+<ul>
+<li>Based on <strong>Dijkstra’s algorithm</strong>：computes shortest paths from one node<br>
+(source) to all other nodes</li>
 <li>&lt;Destionation,Cost,Nexthop&gt;,每次选择cost最小的加入confirmed队列，之后更新Tentative队列，比较相同destination的cost，保留小的cost。</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>PPT ： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-110337-dt-content-rid-9691314_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2010%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-110337-dt-content-rid-9691314_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2010%281%29.pdf</a></p>
+<li>
+<p>PPT ： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-110337-dt-content-rid-9691314_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2010%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-110337-dt-content-rid-9691314_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 10(1).pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-11-BGP"><a href="#Lec-11-BGP" class="headerlink" title="Lec-11 BGP"></a>Lec-11 BGP</h1><ul>
+<h1>Lec-11 BGP</h1>
+<ul>
 <li>和RIP，OSPF一样都是Routing protocols</li>
-<li>routing algorithm：<ul>
+<li>routing algorithm：
+<ul>
 <li>target on Reachability</li>
 <li>Avoid loops</li>
 </ul>
 </li>
-<li>Routing Element : AS<ul>
+<li>Routing Element : AS
+<ul>
 <li>AS:在一个实体管辖下的拥有相同选路策略的 IP 网络</li>
 </ul>
 </li>
-<li>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111877-dt-content-rid-9873718_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2011.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111877-dt-content-rid-9873718_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2011.pdf</a></li>
+<li>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111877-dt-content-rid-9873718_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2011.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111877-dt-content-rid-9873718_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 11.pdf</a></li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-12-Other-Topics-in-IP-Layer"><a href="#Lec-12-Other-Topics-in-IP-Layer" class="headerlink" title="Lec-12 Other Topics in IP Layer"></a>Lec-12 Other Topics in IP Layer</h1><ul>
-<li><p>IPv6</p>
+<h1>Lec-12 Other Topics in IP Layer</h1>
+<ul>
+<li>
+<p>IPv6</p>
 <ul>
 <li>互联网协议的第六版，是用于替代IPv4的下一代协议。IPv6的主要优势是提供了更多的地址空间，可以支持更多的网络设备和应用。IPv6还改进了一些其他方面，如安全性、可扩展性、路由效率等。IPv6的地址长度为128位，采用十六进制表示，可以分为网络前缀和主机地址两部分。</li>
 </ul>
 </li>
-<li><p>NAT( Network Address Translatio)</p>
+<li>
+<p>NAT( Network Address Translatio)</p>
 <ul>
 <li>NAT是网络地址转换的缩写，它是一种将私有网络地址（如局域网内部地址）转换为公共网络地址（如互联网地址）的技术。NAT可以实现多台计算机共享一个公网IP地址访问互联网，从而缓解IPv4地址短缺的问题。</li>
 </ul>
 </li>
-<li><p>Router implementation</p>
+<li>
+<p>Router implementation</p>
 <ul>
-<li>Shared Bus&#x2F;Memory<ul>
+<li>Shared Bus/Memory
+<ul>
 <li>Datagram from input port to output port via a shared bus</li>
 </ul>
 </li>
-<li>Crossbar<ul>
+<li>Crossbar
+<ul>
 <li>A crossbar switch is a matrix of pathways that can be configured to connect any input port to any output port</li>
 </ul>
 </li>
-<li>Self-routing: 0 up 1 down<ul>
+<li>Self-routing: 0 up 1 down
+<ul>
 <li>Banyan Network</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-110563-dt-content-rid-9691771_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2012.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-110563-dt-content-rid-9691771_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2012.pdf</a></p>
+<li>
+<p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-110563-dt-content-rid-9691771_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2012.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-110563-dt-content-rid-9691771_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 12.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-13-SDN"><a href="#Lec-13-SDN" class="headerlink" title="Lec-13 SDN"></a>Lec-13 SDN</h1><ul>
-<li><p>SDN是软件定义网络（Software-defined Networking）的缩写，它是一种网络管理方法，它支持动态可编程的网络配置，提高了网络性能和管理效率，使网络服务能够像云计算一样提供灵活的定制能力。SDN将网络设备的转发面与控制面解耦，通过控制器负责网络设备的管理、网络业务的编排和业务流量的调度，具有成本低、集中管理、灵活调度等优点。SDN的架构可分为基础设施层、控制层和应用层，它们之间通过开放的API进行通信。</p>
+<h1>Lec-13 SDN</h1>
+<ul>
+<li>
+<p>SDN是软件定义网络（Software-defined Networking）的缩写，它是一种网络管理方法，它支持动态可编程的网络配置，提高了网络性能和管理效率，使网络服务能够像云计算一样提供灵活的定制能力。SDN将网络设备的转发面与控制面解耦，通过控制器负责网络设备的管理、网络业务的编排和业务流量的调度，具有成本低、集中管理、灵活调度等优点。SDN的架构可分为基础设施层、控制层和应用层，它们之间通过开放的API进行通信。</p>
 </li>
-<li><p>PPT: <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111370-dt-content-rid-9805632_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2013.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111370-dt-content-rid-9805632_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2013.pdf</a></p>
+<li>
+<p>PPT: <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111370-dt-content-rid-9805632_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2013.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111370-dt-content-rid-9805632_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 13.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-14-Mobile-Routing"><a href="#Lec-14-Mobile-Routing" class="headerlink" title="Lec-14 Mobile Routing"></a>Lec-14 Mobile Routing</h1><ul>
-<li><p>Mobile IP</p>
+<h1>Lec-14 Mobile Routing</h1>
 <ul>
-<li><p>Mobile IP is designed to provide seamless network connectivity under<br>mobile situation where subnetwork changes may occur</p>
+<li>
+<p>Mobile IP</p>
+<ul>
+<li>
+<p>Mobile IP is designed to provide seamless network connectivity under<br>
+mobile situation where subnetwork changes may occur</p>
 </li>
-<li><p>Home address</p>
+<li>
+<p>Home address</p>
 <ul>
 <li>Home of the mobile host</li>
 <li>Goal : A sending host can find the mobile host through its home address</li>
 </ul>
 </li>
-<li><p>How sending ?</p>
+<li>
+<p>How sending ?</p>
 <ul>
-<li>From mobile host to sending host : direct send packets<ul>
+<li>From mobile host to sending host : direct send packets
+<ul>
 <li>src IP : home addrss</li>
 </ul>
 </li>
-<li>From sending host to mobile host :<ul>
+<li>From sending host to mobile host :
+<ul>
 <li>step 1:  Packets from sending host to mobile host are routed to home network</li>
 <li>step 2: Home agent redirects packets for mobile host to the foreign agent</li>
 <li>step 3:  Foreign agent recognizes and delivers packets for the mobile host</li>
@@ -936,24 +1096,30 @@
 </li>
 </ul>
 </li>
-<li><p>Mobility Handling in Cellular Network</p>
+<li>
+<p>Mobility Handling in Cellular Network</p>
 <ul>
-<li><p>Home network : 您订阅的移动电话提供商的网络</p>
+<li>
+<p>Home network : 您订阅的移动电话提供商的网络</p>
 <ul>
 <li>home location register (HLR):家庭网络中的数据库，其中包含永久手机号码、个人资料信息（服务、偏好、账单）、当前位置信息（可能在另一个网络中）</li>
 </ul>
 </li>
-<li><p>Foreign network (Visited) : 移动电话目前所在的网络（其他城市的提供商或不同的提供商）</p>
+<li>
+<p>Foreign network (Visited) : 移动电话目前所在的网络（其他城市的提供商或不同的提供商）</p>
 <ul>
 <li>visitor location register (VLR) :数据库中包含当前网络中每个用户的条目</li>
 <li>could be a home network</li>
 </ul>
 </li>
-<li><p>GSM(全球移动通信系统（Global System for Mobile Communications）)</p>
+<li>
+<p>GSM(全球移动通信系统（Global System for Mobile Communications）)</p>
 <ul>
-<li><p>GSM是一种数字移动通信标准，采用时分多址（TDMA）和频分多址（FDMA）技术，将一个载波频率的时间分成8个时隙，每个时隙对应一个信道，从而实现多个用户同时使用一个载波频率。</p>
+<li>
+<p>GSM是一种数字移动通信标准，采用时分多址（TDMA）和频分多址（FDMA）技术，将一个载波频率的时间分成8个时隙，每个时隙对应一个信道，从而实现多个用户同时使用一个载波频率。</p>
 </li>
-<li><p>GSM的系统结构主要由移动台（MS）、基站子系统（BSS）、移动网子系统（NSS）和操作维护中心（OMC）四部分组成。</p>
+<li>
+<p>GSM的系统结构主要由移动台（MS）、基站子系统（BSS）、移动网子系统（NSS）和操作维护中心（OMC）四部分组成。</p>
 <ul>
 <li>移动台（MS）是GSM系统的终端设备，包括手机、平板电脑等。它由移动终端（ME）和用户身份识别卡（SIM）两部分组成。移动终端（ME）主要完成语音信号的处理和无线收发等功能。用户身份识别卡（SIM）存储了用户的身份信息和安全信息，用于认证和授权用户访问GSM网络。</li>
 <li>基站子系统（BSS）是GSM系统中与无线蜂窝方面关系最直接的基本组成部分。它通过无线接口直接与移动台相接，负责无线信号的收发和交换。基站子系统（BSS）主要包括基站控制器（BSC）和基站收发信台（BTS）两个部分。基站控制器（BSC）位于移动交换中心（MSC）与基站收发信台（BTS）之间，具有对一个或者多个基站收发信台（BTS）进行控制和管理的功能，主要完成无线信道的分配、发射功率的控制以及越区信道切换等功能。基站收发信台（BTS）是基站子系统的无线收发设备，由基站控制器（BSC）控制，主要负责无线传输功能，完成无线与有线的转换、无线分集、无线信道加密、跳频等功能。</li>
@@ -965,24 +1131,30 @@
 </li>
 </ul>
 </li>
-<li><p>Routing in Mobile Ad Hoc Network (MANET)</p>
+<li>
+<p>Routing in Mobile Ad Hoc Network (MANET)</p>
 <ul>
-<li>MANET 是什么？<ul>
+<li>MANET 是什么？
+<ul>
 <li>MANET是移动自组织网络的缩写，也被称为无线自组织网络或Adhoc无线网络，它是一种不需要依赖现有固定通信网络基础设施的、能够迅速展开使用的网络体系，所需人工干预最少，是没有任何中心实体、自组织、自愈的网络。1它由一群移动设备组成，这些设备通过无线链接彼此通信。随着网络拓扑结构的频繁变化，MANET节点可以自由随机移动。</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>PPT ： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111086-dt-content-rid-9758266_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2014%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111086-dt-content-rid-9758266_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2014%281%29.pdf</a></p>
+<li>
+<p>PPT ： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111086-dt-content-rid-9758266_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2014%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111086-dt-content-rid-9758266_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 14(1).pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-15-TCP-1"><a href="#Lec-15-TCP-1" class="headerlink" title="Lec-15 TCP 1"></a>Lec-15 TCP 1</h1><ul>
-<li><p>UDP</p>
+<h1>Lec-15 TCP 1</h1>
 <ul>
-<li>什么是UDP？一种简单的传输层协议<ul>
+<li>
+<p>UDP</p>
+<ul>
+<li>什么是UDP？一种简单的传输层协议
+<ul>
 <li>UDP不需要建立连接，可以直接发送数据。</li>
 <li>UDP不保证数据的可靠性，可能会出现丢包、重复、乱序等问题。</li>
 <li>UDP不进行流量控制和拥塞控制，发送速度不受网络状况的影响。</li>
@@ -992,9 +1164,11 @@
 </li>
 </ul>
 </li>
-<li><p>TCP</p>
+<li>
+<p>TCP</p>
 <ul>
-<li><p>一些结构介绍</p>
+<li>
+<p>一些结构介绍</p>
 <ul>
 <li>seq（序号）：TCP连接字节流中每一个字节都会有一个编号，而本字段的值指的是本报文段所发送数据部分第一个字节的序号。</li>
 <li>ack（确认号）：表示期望收到的下一个报文段数据部分的第一个字节的编号，编号为ack-1及以前的字节已经收到。</li>
@@ -1003,22 +1177,29 @@
 <li>FIN：用来释放一个连接。当本字段为1时，表示此报文段的发送端数据已发送完毕，要求释放运输连接。</li>
 </ul>
 </li>
-<li><p>Before started ：</p>
+<li>
+<p>Before started ：</p>
 <ul>
 <li>Active participant is client(客户端) 发送方</li>
 <li>Passive participant is server(服务端) 接收方</li>
 </ul>
 </li>
-<li><p>建立连接（Connection Establishment）</p>
+<li>
+<p>建立连接（Connection Establishment）</p>
 <ul>
-<li>三次握手（three way handshake）<ul>
-<li><p>第一次握手：客户端的应用进程主动打开，并向服务端发出请求报文段。其首部中：SYN&#x3D;1,seq&#x3D;x。</p>
+<li>三次握手（three way handshake）
+<ul>
+<li>
+<p>第一次握手：客户端的应用进程主动打开，并向服务端发出请求报文段。其首部中：SYN=1,seq=x。</p>
 </li>
-<li><p>第二次握手：服务器应用进程被动打开。若同意客户端的请求，则发回确认报文，其首部中：SYN&#x3D;1,ACK&#x3D;1,ack&#x3D;x+1,seq&#x3D;y。</p>
+<li>
+<p>第二次握手：服务器应用进程被动打开。若同意客户端的请求，则发回确认报文，其首部中：SYN=1,ACK=1,ack=x+1,seq=y。</p>
 </li>
-<li><p>客户端收到确认报文之后，通知上层应用进程连接已建立，并向服务器发出确认报文，其首部：ACK&#x3D;1,ack&#x3D;y+1。当服务器收到客户端的确认报文之后，也通知其上层应用进程连接已建立。</p>
+<li>
+<p>客户端收到确认报文之后，通知上层应用进程连接已建立，并向服务器发出确认报文，其首部：ACK=1,ack=y+1。当服务器收到客户端的确认报文之后，也通知其上层应用进程连接已建立。</p>
 </li>
-<li><p>why not two?</p>
+<li>
+<p>why not two?</p>
 <ul>
 <li>To eliminate out-of-order connection request</li>
 <li>To confirm the client knows the server is ready</li>
@@ -1028,18 +1209,25 @@
 </li>
 </ul>
 </li>
-<li><p>连接中断(Connection Termination)</p>
+<li>
+<p>连接中断(Connection Termination)</p>
 <ul>
-<li>四次握手(Four-way Handshake)<ul>
-<li><p>第一次挥手：数据传输结束以后，客户端的应用进程发出连接释放报文段，并停止发送数据，其首部：FIN&#x3D;1,seq&#x3D;u。</p>
+<li>四次握手(Four-way Handshake)
+<ul>
+<li>
+<p>第一次挥手：数据传输结束以后，客户端的应用进程发出连接释放报文段，并停止发送数据，其首部：FIN=1,seq=u。</p>
 </li>
-<li><p>第二次挥手：服务器端收到连接释放报文段之后，发出确认报文，其首部：ack&#x3D;u+1,seq&#x3D;v。此时本次连接就进入了半关闭状态，客户端不再向服务器发送数据。而服务器端仍会继续发送。</p>
+<li>
+<p>第二次挥手：服务器端收到连接释放报文段之后，发出确认报文，其首部：ack=u+1,seq=v。此时本次连接就进入了半关闭状态，客户端不再向服务器发送数据。而服务器端仍会继续发送。</p>
 </li>
-<li><p>第三次挥手：若服务器已经没有要向客户端发送的数据，其应用进程就通知服务器释放TCP连接。这个阶段服务器所发出的最后一个报文的首部应为：FIN&#x3D;1,ACK&#x3D;1,seq&#x3D;w,ack&#x3D;u+1。</p>
+<li>
+<p>第三次挥手：若服务器已经没有要向客户端发送的数据，其应用进程就通知服务器释放TCP连接。这个阶段服务器所发出的最后一个报文的首部应为：FIN=1,ACK=1,seq=w,ack=u+1。</p>
 </li>
-<li><p>第四次挥手：客户端收到连接释放报文段之后，必须发出确认：ACK&#x3D;1,seq&#x3D;u+1,ack&#x3D;w+1。 再经过2MSL(最长报文端寿命)后，本次TCP连接真正结束，通信双方完成了他们的告别。</p>
+<li>
+<p>第四次挥手：客户端收到连接释放报文段之后，必须发出确认：ACK=1,seq=u+1,ack=w+1。 再经过2MSL(最长报文端寿命)后，本次TCP连接真正结束，通信双方完成了他们的告别。</p>
 </li>
-<li><p>为什么客户端（发送方）一定要有一个等待时间？</p>
+<li>
+<p>为什么客户端（发送方）一定要有一个等待时间？</p>
 <ul>
 <li>因为接收方必须要收到最后一个ACK才能进入CLOSED状态，而接收方则不必等待，因为发送方不必须收到ACK，再收到来自接收方的FIN的时候仍然可以进入下一个阶段。</li>
 </ul>
@@ -1048,76 +1236,96 @@
 </li>
 </ul>
 </li>
-<li><p><strong>Learn more ： <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/24860403">https://zhuanlan.zhihu.com/p/24860403</a></strong></p>
+<li>
+<p><strong>Learn more ： <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/24860403">https://zhuanlan.zhihu.com/p/24860403</a></strong></p>
 </li>
 </ul>
 </li>
-<li><p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111923-dt-content-rid-9882478_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2015%20-%20tcp1.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111923-dt-content-rid-9882478_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2015%20-%20tcp1.pdf</a></p>
+<li>
+<p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111923-dt-content-rid-9882478_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2015%20-%20tcp1.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-111923-dt-content-rid-9882478_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 15 - tcp1.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-16-TCP-2"><a href="#Lec-16-TCP-2" class="headerlink" title="Lec-16 TCP 2"></a>Lec-16 TCP 2</h1><ul>
-<li><p>TCP是如何工作的？、</p>
+<h1>Lec-16 TCP 2</h1>
+<ul>
+<li>
+<p>TCP是如何工作的？、</p>
 <ul>
 <li>核心算法 ： Sliding window</li>
 </ul>
 </li>
-<li><p>Sliding window (滑动窗口)</p>
+<li>
+<p>Sliding window (滑动窗口)</p>
 <ul>
-<li><p>Send buffer</p>
+<li>
+<p>Send buffer</p>
 <ul>
-<li><p>Cannot ack a byte that has not been sent ： LastByteAcked $\leq$ LastByteSent</p>
+<li>
+<p>Cannot ack a byte that has not been sent ： LastByteAcked <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> LastByteSent</p>
 </li>
-<li><p>Cannot send a byte that has not been written : LastByteSent $\leq$ LastByteWritten</p>
+<li>
+<p>Cannot send a byte that has not been written : LastByteSent <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> LastByteWritten</p>
 </li>
 </ul>
 </li>
-<li><p>Receive buffer</p>
+<li>
+<p>Receive buffer</p>
 <ul>
-<li><p>A byte can be read if it is received and all preceeding byters are received : LastByteRead $&lt;$ NextByteExpected</p>
+<li>
+<p>A byte can be read if it is received and all preceeding byters are received : LastByteRead <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&lt;</mo></mrow><annotation encoding="application/x-tex">&lt;</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&lt;</span></span></span></span> NextByteExpected</p>
 </li>
-<li><p>NextByteExpected $\leq$ LastByteRcvd(最后一个收到的字节) + 1</p>
+<li>
+<p>NextByteExpected <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> LastByteRcvd(最后一个收到的字节) + 1</p>
 </li>
 </ul>
 </li>
-<li><p>Flow Control</p>
+<li>
+<p>Flow Control</p>
 <ul>
-<li><p>AdvertisedWindow &#x3D; max receiver buffer - (next byter expected - 1 - last byte read)</p>
+<li>
+<p>AdvertisedWindow = max receiver buffer - (next byter expected - 1 - last byte read)</p>
 <ul>
 <li>Indicate the amount of free space available in the receive buffer</li>
 </ul>
 </li>
-<li><p>last byte sent – last byte ACKed $\leq$ AdvertisedWindow</p>
+<li>
+<p>last byte sent – last byte ACKed <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em;"></span><span class="mrel">≤</span></span></span></span> AdvertisedWindow</p>
 <ul>
 <li>Sender must adhere to AdvertisedWindow from the receiver</li>
 </ul>
 </li>
-<li><p>Silly Window Syndrome</p>
+<li>
+<p>Silly Window Syndrome</p>
 <ul>
-<li>UsableWindow&#x3D; AdvertisedWindow - BytesInFlight</li>
+<li>UsableWindow= AdvertisedWindow - BytesInFlight</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>Nagle’s Algorithm</p>
+<li>
+<p>Nagle’s Algorithm</p>
 <ul>
 <li>如果有未收到的ACK的数据，就把小包数据攒起来，直到收到ACK或者满了就发出去</li>
 </ul>
 </li>
-<li><p>Adaptive Timeout</p>
+<li>
+<p>Adaptive Timeout</p>
 <ul>
-<li>Jacobson&#x2F;Karels Algorithm<ul>
-<li>Difference &#x3D; SampleRTT − EstimatedRTT</li>
-<li>$ EstimatedRTT &#x3D; EstimatedRTT + (δ*Difference)$</li>
-<li>$Deviation &#x3D; Deviation + δ*(|Difference| − Deviation)$<ul>
-<li>$δ$ is typically set to $\frac{1}{8}$</li>
+<li>Jacobson/Karels Algorithm
+<ul>
+<li>Difference = SampleRTT − EstimatedRTT</li>
+<li>$ EstimatedRTT = EstimatedRTT + (δ*Difference)$</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>e</mi><mi>v</mi><mi>i</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo>=</mo><mi>D</mi><mi>e</mi><mi>v</mi><mi>i</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo>+</mo><mi>δ</mi><mo>∗</mo><mo stretchy="false">(</mo><mi mathvariant="normal">∣</mi><mi>D</mi><mi>i</mi><mi>f</mi><mi>f</mi><mi>e</mi><mi>r</mi><mi>e</mi><mi>n</mi><mi>c</mi><mi>e</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mi>D</mi><mi>e</mi><mi>v</mi><mi>i</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">Deviation = Deviation + δ*(|Difference| − Deviation)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">De</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">ia</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">De</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">ia</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.10764em;">ff</span><span class="mord mathnormal">ere</span><span class="mord mathnormal">n</span><span class="mord mathnormal">ce</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">De</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">ia</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">δ</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.03785em;">δ</span></span></span></span> is typically set to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{8}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">8</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
 </ul>
 </li>
-<li>$TimeOut &#x3D; μ * EstimatedRTT + φ * Deviation$<ul>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mi>i</mi><mi>m</mi><mi>e</mi><mi>O</mi><mi>u</mi><mi>t</mi><mo>=</mo><mi>μ</mi><mo>∗</mo><mi>E</mi><mi>s</mi><mi>t</mi><mi>i</mi><mi>m</mi><mi>a</mi><mi>t</mi><mi>e</mi><mi>d</mi><mi>R</mi><mi>T</mi><mi>T</mi><mo>+</mo><mi>φ</mi><mo>∗</mo><mi>D</mi><mi>e</mi><mi>v</mi><mi>i</mi><mi>a</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">TimeOut = μ * EstimatedRTT + φ * Deviation</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal">im</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mord mathnormal">u</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6597em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">μ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mord mathnormal">s</span><span class="mord mathnormal">t</span><span class="mord mathnormal">ima</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal">d</span><span class="mord mathnormal" style="margin-right:0.13889em;">RTT</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6597em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">φ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">De</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">ia</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span></span></span></span>
+<ul>
 <li>$ μ$ is typically set to 1 and $φ $ is set to 4</li>
 </ul>
 </li>
@@ -1125,77 +1333,96 @@
 </li>
 </ul>
 </li>
-<li><p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112074-dt-content-rid-10093170_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2016%20-%20tcp2%282%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112074-dt-content-rid-10093170_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2016%20-%20tcp2%282%29.pdf</a></p>
+<li>
+<p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112074-dt-content-rid-10093170_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2016%20-%20tcp2%282%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112074-dt-content-rid-10093170_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 16 - tcp2(2).pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-17-Congestiuon-Control-1"><a href="#Lec-17-Congestiuon-Control-1" class="headerlink" title="Lec-17 Congestiuon Control 1"></a>Lec-17 Congestiuon Control 1</h1><ul>
-<li><p>拥塞发生的预示</p>
+<h1>Lec-17 Congestiuon Control 1</h1>
+<ul>
+<li>
+<p>拥塞发生的预示</p>
 <ul>
 <li>丢包</li>
 <li>网络延迟</li>
 </ul>
 </li>
-<li><p>方法</p>
+<li>
+<p>方法</p>
 <ul>
-<li><p>AIMD(Additive Increase&#x2F;Multiplicative Decrease)</p>
+<li>
+<p>AIMD(Additive Increase/Multiplicative Decrease)</p>
 <ul>
-<li>成功收到最后一个窗口的ACK ：  cwnd&#x3D; cwnd+1<ul>
-<li>Increment &#x3D; 1&#x2F;cwnd</li>
-<li>cwnd +&#x3D; Increment</li>
+<li>成功收到最后一个窗口的ACK ：  cwnd= cwnd+1
+<ul>
+<li>Increment = 1/cwnd</li>
+<li>cwnd += Increment</li>
 </ul>
 </li>
-<li>如果丢包 ：  cwnd&#x3D; cwnd&#x2F;2</li>
+<li>如果丢包 ：  cwnd= cwnd/2</li>
 </ul>
 </li>
-<li><p>Slow strat</p>
+<li>
+<p>Slow strat</p>
 <ul>
 <li>不比 Additive Increase 慢</li>
-<li>只要收到ACK ： cwnd&#x3D; cwnd+1（相当于x2每次）</li>
+<li>只要收到ACK ： cwnd= cwnd+1（相当于x2每次）</li>
 </ul>
 </li>
-<li><p>Fast retransmission ：</p>
+<li>
+<p>Fast retransmission ：</p>
 <ul>
 <li>用重复的ACK（一般3个）来预示丢包</li>
-<li>Receiver replies every TCP segment with acknum&#x3D; next byte expected</li>
+<li>Receiver replies every TCP segment with acknum= next byte expected</li>
 </ul>
 </li>
-<li><p>Fast Recovery</p>
+<li>
+<p>Fast Recovery</p>
 <ul>
 <li>No need to start from window size 1</li>
-<li>Instead, reset CWND to CWND&#x2F;2</li>
+<li>Instead, reset CWND to CWND/2</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>PPT ： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112338-dt-content-rid-9947482_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2017%20-%20congestion%20control%201.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112338-dt-content-rid-9947482_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2017%20-%20congestion%20control%201.pdf</a></p>
+<li>
+<p>PPT ： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112338-dt-content-rid-9947482_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2017%20-%20congestion%20control%201.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112338-dt-content-rid-9947482_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 17 - congestion control 1.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-18-Congestion-Control-2"><a href="#Lec-18-Congestion-Control-2" class="headerlink" title="Lec-18 Congestion Control 2"></a>Lec-18 Congestion Control 2</h1><ul>
-<li><p>Vegas Algorithm</p>
+<h1>Lec-18 Congestion Control 2</h1>
 <ul>
-<li><p>Vegas首先重新设计了RTT的计算方式，当前时间和时间戳相减，然后用RTT来决定重传。当收到重复的ACK时，Vegas检查当前时间和相关段记录的时间戳之间的差值是否大于超时值。如果是，那么Vegas不需要等待3个重复的ACK就可以重传这个片段。</p>
-</li>
-<li><p>Expect Rate :  CongestionWindow&#x2F;BaseRTT</p>
-</li>
-<li><p>ActualRate : ActualRate&#x3D;CongestionWindow&#x2F;ActualRTT</p>
-</li>
-<li><p>如果</p>
+<li>
+<p>Vegas Algorithm</p>
 <ul>
-<li>$ ExpectRate- ActualRate &lt; α$ :<ul>
+<li>
+<p>Vegas首先重新设计了RTT的计算方式，当前时间和时间戳相减，然后用RTT来决定重传。当收到重复的ACK时，Vegas检查当前时间和相关段记录的时间戳之间的差值是否大于超时值。如果是，那么Vegas不需要等待3个重复的ACK就可以重传这个片段。</p>
+</li>
+<li>
+<p>Expect Rate :  CongestionWindow/BaseRTT</p>
+</li>
+<li>
+<p>ActualRate : ActualRate=CongestionWindow/ActualRTT</p>
+</li>
+<li>
+<p>如果</p>
+<ul>
+<li>$ ExpectRate- ActualRate &lt; α$ :
+<ul>
 <li>cwnd++</li>
 </ul>
 </li>
-<li>$ α &lt;ExpectRate- ActualRate &lt; β$  :<ul>
-<li>cwnd &#x3D; cwnd</li>
+<li>$ α &lt;ExpectRate- ActualRate &lt; β$  :
+<ul>
+<li>cwnd = cwnd</li>
 </ul>
 </li>
-<li>$ β &lt;ExpectRate- ActualRate $ :<ul>
+<li>$ β &lt;ExpectRate- ActualRate $ :
+<ul>
 <li>cwnd–</li>
 </ul>
 </li>
@@ -1203,89 +1430,114 @@
 </li>
 </ul>
 </li>
-<li><p>Congestion Control in Routers</p>
+<li>
+<p>Congestion Control in Routers</p>
 <ul>
-<li><p>Queuing Discipline</p>
+<li>
+<p>Queuing Discipline</p>
 <ul>
-<li><p>FIFO(First-In-First-Out)</p>
+<li>
+<p>FIFO(First-In-First-Out)</p>
 </li>
-<li><p>First-In-First-Out (FIFO) with<br>  Priority</p>
+<li>
+<p>First-In-First-Out (FIFO) with<br>
+Priority</p>
 </li>
-<li><p>Fair Queuing</p>
+<li>
+<p>Fair Queuing</p>
 <ul>
 <li>Round Robin</li>
 </ul>
 </li>
-<li><p>Weighted Fair Queuing</p>
+<li>
+<p>Weighted Fair Queuing</p>
 </li>
-<li><p>Bit-Level Fair Queuing</p>
+<li>
+<p>Bit-Level Fair Queuing</p>
 <ul>
 <li>Schedule according to earliest finish time</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>DECbit</p>
+<li>
+<p>DECbit</p>
 <ul>
-<li><p>这种策略的目标是通过在数据包中添加一个比特来显式地通知发送方网络的拥塞状态，从而使发送方能够调整其数据传输速率以避免网络拥塞</p>
+<li>
+<p>这种策略的目标是通过在数据包中添加一个比特来显式地通知发送方网络的拥塞状态，从而使发送方能够调整其数据传输速率以避免网络拥塞</p>
 </li>
-<li><p>If &lt; 50% of last window’s packets had bit set：</p>
+<li>
+<p>If &lt; 50% of last window’s packets had bit set：</p>
 <ul>
 <li>cwnd++</li>
 </ul>
 </li>
-<li><p>If &gt; 50% of last window’s packets had bit set：</p>
+<li>
+<p>If &gt; 50% of last window’s packets had bit set：</p>
 <ul>
 <li>cwnd*0.875</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><strong>Red Algorithm</strong></p>
+<li>
+<p><strong>Red Algorithm</strong></p>
 <ul>
-<li><p>Compute Average Queue Length:</p>
+<li>
+<p>Compute Average Queue Length:</p>
 <ul>
-<li>AvgLen &#x3D; (1 - Weight) * AvgLen + Weight * SampleLen</li>
+<li>AvgLen = (1 - Weight) * AvgLen + Weight * SampleLen</li>
 </ul>
 </li>
-<li><p>if AvgLen &lt;&#x3D; MinThreshold</p>
+<li>
+<p>if AvgLen &lt;= MinThreshold</p>
 <ul>
 <li>等待数据包</li>
 </ul>
 </li>
-<li><p>if MinThreshold &lt; AvgLen &lt; MaxThreshold</p>
+<li>
+<p>if MinThreshold &lt; AvgLen &lt; MaxThreshold</p>
 <ul>
 <li>Drop arriving packet with probability P</li>
 </ul>
 </li>
-<li><p>if MaxThreshold &lt;&#x3D; AvgLen then drop arriving packet</p>
+<li>
+<p>if MaxThreshold &lt;= AvgLen then drop arriving packet</p>
 </li>
-<li><p>Computing probability P</p>
+<li>
+<p>Computing probability P</p>
 <ul>
-<li>TempP &#x3D; MaxP* (AvgLen- MinThreshold)&#x2F;(MaxThreshold-MinThreshold)</li>
-<li>P &#x3D; TempP&#x2F;(1 - count * TempP)</li>
+<li>TempP = MaxP* (AvgLen- MinThreshold)/(MaxThreshold-MinThreshold)</li>
+<li>P = TempP/(1 - count * TempP)</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>PPT： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112565-dt-content-rid-9972365_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2018%20-%20congestion%20control%202.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112565-dt-content-rid-9972365_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2018%20-%20congestion%20control%202.pdf</a></p>
+<li>
+<p>PPT： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112565-dt-content-rid-9972365_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2018%20-%20congestion%20control%202.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112565-dt-content-rid-9972365_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 18 - congestion control 2.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-19-Other-Topics-in-Transportation-Layer"><a href="#Lec-19-Other-Topics-in-Transportation-Layer" class="headerlink" title="Lec-19 Other Topics in Transportation Layer"></a>Lec-19 Other Topics in Transportation Layer</h1><ul>
-<li><p>TCP Fairness</p>
+<h1>Lec-19 Other Topics in Transportation Layer</h1>
 <ul>
-<li><p>Fairness Index : $f(x_1 \dots x_n) &#x3D; \frac{(\sum x_i)^2}{n*\sum x_i^2}$</p>
+<li>
+<p>TCP Fairness</p>
+<ul>
+<li>
+<p>Fairness Index : <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>…</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mfrac><mrow><mo stretchy="false">(</mo><mo>∑</mo><msub><mi>x</mi><mi>i</mi></msub><msup><mo stretchy="false">)</mo><mn>2</mn></msup></mrow><mrow><mi>n</mi><mo>∗</mo><mo>∑</mo><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(x_1 \dots x_n) = \frac{(\sum x_i)^2}{n*\sum x_i^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner">…</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.7081em;vertical-align:-0.5992em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1089em;"><span style="top:-2.6264em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">∗</span><span class="mop op-symbol small-op mtight" style="position:relative;top:0em;">∑</span><span class="mspace mtight" style="margin-right:0.1952em;"></span><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8051em;"><span style="top:-2.1777em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-2.8448em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3223em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mop op-symbol small-op mtight" style="position:relative;top:0em;">∑</span><span class="mspace mtight" style="margin-right:0.1952em;"></span><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-2.931em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.5992em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
 </li>
-<li><p>Why choose AIMD ?</p>
+<li>
+<p>Why choose AIMD ?</p>
 </li>
 </ul>
 </li>
-<li><p>QUIC :<br>  是一种新的网络协议，最初由Google设计，用于改善使用TCP的连接导向Web应用程序的性能。QUIC通过使用用户数据报协议（UDP）在两个端点之间建立多路复用连接，从而实现这一目标。</p>
+<li>
+<p>QUIC :<br>
+是一种新的网络协议，最初由Google设计，用于改善使用TCP的连接导向Web应用程序的性能。QUIC通过使用用户数据报协议（UDP）在两个端点之间建立多路复用连接，从而实现这一目标。</p>
 <ul>
 <li>Always encrypted</li>
 <li>0-RTT connection establishment</li>
@@ -1294,14 +1546,17 @@
 <li>Parallel Streams</li>
 </ul>
 </li>
-<li><p>QoS(Quality of Service)</p>
+<li>
+<p>QoS(Quality of Service)</p>
 <ul>
 <li>是一种网络技术，它能够利用各种基础技术，为指定的网络通信提供更好的服务能力。QoS是用来解决网络延迟和阻塞等问题的一种技术1。在有限的带宽资源下，QoS为各种业务分配带宽，为业务提供端到端的服务质量保证。例如，语音、视频和重要的数据应用在网络设备中可以通过配置QoS优先得到服务。</li>
 </ul>
 </li>
-<li><p>Token bucket</p>
+<li>
+<p>Token bucket</p>
 <ul>
-<li>paraments:<ul>
+<li>paraments:
+<ul>
 <li>r : average rate</li>
 <li>b : bucket of depth(limits size of burst)</li>
 <li>R : Maximum link capacity of peak rate</li>
@@ -1310,64 +1565,79 @@
 </li>
 </ul>
 </li>
-<li><p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112861-dt-content-rid-10018820_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2019%20-%20other%20transport%20topics.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112861-dt-content-rid-10018820_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2019%20-%20other%20transport%20topics.pdf</a></p>
+<li>
+<p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112861-dt-content-rid-10018820_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2019%20-%20other%20transport%20topics.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-112861-dt-content-rid-10018820_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 19 - other transport topics.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-20-RTP-and-RPC"><a href="#Lec-20-RTP-and-RPC" class="headerlink" title="Lec-20 RTP and RPC"></a>Lec-20 RTP and RPC</h1><ul>
-<li><p>RTP :实时传输协议）是一个网络传输协议，它被设计用于通过组播或单播网络服务传输实时数据，如音频、视频或仿真数据。RTP详细说明了在互联网上传递音频和视频的标准数据包格式。它一开始被设计为一个多播协议，但后来被用在很多单播应用中.</p>
+<h1>Lec-20 RTP and RPC</h1>
+<ul>
+<li>
+<p>RTP :实时传输协议）是一个网络传输协议，它被设计用于通过组播或单播网络服务传输实时数据，如音频、视频或仿真数据。RTP详细说明了在互联网上传递音频和视频的标准数据包格式。它一开始被设计为一个多播协议，但后来被用在很多单播应用中.</p>
 </li>
-<li><p>RPC : （Remote Procedure Call，远程过程调用）是一种网络通信协议，它允许程序调用另一个地址空间（通常是共享网络的另一台机器上）的过程或函数，而无需程序员显式编码这个远程调用的细节。RPC的主要功能目标是让构建分布式计算（应用）更容易，在提供强大的远程调用能力时不损失本地调用的语义简洁性。</p>
+<li>
+<p>RPC : （Remote Procedure Call，远程过程调用）是一种网络通信协议，它允许程序调用另一个地址空间（通常是共享网络的另一台机器上）的过程或函数，而无需程序员显式编码这个远程调用的细节。RPC的主要功能目标是让构建分布式计算（应用）更容易，在提供强大的远程调用能力时不损失本地调用的语义简洁性。</p>
 </li>
-<li><p>PPT: <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-113091-dt-content-rid-10056554_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2020%20-%20rpc%20and%20rtp.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-113091-dt-content-rid-10056554_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2020%20-%20rpc%20and%20rtp.pdf</a></p>
+<li>
+<p>PPT: <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-113091-dt-content-rid-10056554_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2020%20-%20rpc%20and%20rtp.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-113091-dt-content-rid-10056554_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 20 - rpc and rtp.pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-21-Data-compression"><a href="#Lec-21-Data-compression" class="headerlink" title="Lec-21 Data compression"></a>Lec-21 Data compression</h1><ul>
-<li><p>Data presentation</p>
+<h1>Lec-21 Data compression</h1>
+<ul>
+<li>
+<p>Data presentation</p>
 <ul>
 <li>主要介绍了不同格式的文件传输不兼容的问题如何解决</li>
 </ul>
 </li>
-<li><p>Lossless compression</p>
+<li>
+<p>Lossless compression</p>
 <ul>
-<li><p>gzip</p>
+<li>
+<p>gzip</p>
 <ul>
 <li>一种类Unix系统上的文件压缩和解压缩的软件。由GNU计划实现</li>
 <li>广泛使用的无损压缩方法</li>
-<li>主要算法<ul>
+<li>主要算法
+<ul>
 <li>LZ Algorithm</li>
 <li>Huffman Coding</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>Run Length Encoding</p>
+<li>
+<p>Run Length Encoding</p>
 <ul>
 <li>想法：替换重复的字符串并用一个计数器表示</li>
-<li>例子 ： AAABBCDDDD &#x3D;&gt; 3A2B1C4D</li>
+<li>例子 ： AAABBCDDDD =&gt; 3A2B1C4D</li>
 </ul>
 </li>
-<li><p>LZ Algorithm</p>
+<li>
+<p>LZ Algorithm</p>
 <ul>
-<li><p>LZ77</p>
+<li>
+<p>LZ77</p>
 <ul>
 <li>（最长匹配，开始匹配位置（从指针往前数！），下一个字符）</li>
-<li>click here : <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wP4y1Z7eD/?spm_id_from=333.337.search-card.all.click&vd_source=7a8c6998d1ecddaa3ecec172aaa0036b">https://www.bilibili.com/video/BV1wP4y1Z7eD/?spm_id_from=333.337.search-card.all.click&amp;vd_source=7a8c6998d1ecddaa3ecec172aaa0036b</a></li>
+<li>click here : <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wP4y1Z7eD/?spm_id_from=333.337.search-card.all.click&amp;vd_source=7a8c6998d1ecddaa3ecec172aaa0036b">https://www.bilibili.com/video/BV1wP4y1Z7eD/?spm_id_from=333.337.search-card.all.click&amp;vd_source=7a8c6998d1ecddaa3ecec172aaa0036b</a></li>
 <li>Learn more : <a target="_blank" rel="noopener" href="https://www.cnblogs.com/junyuhuang/p/4138376.html">https://www.cnblogs.com/junyuhuang/p/4138376.html</a></li>
 </ul>
 </li>
-<li><p>LZ78</p>
+<li>
+<p>LZ78</p>
 <ul>
 <li>(匹配的字典序号,下一字符)</li>
 <li>Learn more ：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/aeexiaoqiang/p/6529375.html">https://www.cnblogs.com/aeexiaoqiang/p/6529375.html</a></li>
 </ul>
 </li>
-<li><p>Huffman coding</p>
+<li>
+<p>Huffman coding</p>
 <ul>
 <li>ideas : 高频短表达</li>
 <li>e.g.: A:90%, B:5%, C:5% so A: 1 B :01 C :00</li>
@@ -1378,12 +1648,15 @@
 </li>
 </ul>
 </li>
-<li><p>Multimedia Compression</p>
+<li>
+<p>Multimedia Compression</p>
 <ul>
-<li><p>JPEG ： 图像压缩技术</p>
+<li>
+<p>JPEG ： 图像压缩技术</p>
 <ul>
 <li>Splitting</li>
-<li>RGB to YUV<ul>
+<li>RGB to YUV
+<ul>
 <li>Y 亮度（luminance）</li>
 <li>U，V 色度（chrominance）</li>
 </ul>
@@ -1392,69 +1665,85 @@
 <li>and so on</li>
 </ul>
 </li>
-<li><p>MPEG : 影像压缩技术</p>
+<li>
+<p>MPEG : 影像压缩技术</p>
 </li>
-<li><p>MP3 ： 音频压缩技术</p>
+<li>
+<p>MP3 ： 音频压缩技术</p>
 </li>
 </ul>
 </li>
-<li><p>PPT ： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-113370-dt-content-rid-10098495_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2021%20-%20data%20compression%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-113370-dt-content-rid-10098495_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2021%20-%20data%20compression%281%29.pdf</a></p>
+<li>
+<p>PPT ： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-113370-dt-content-rid-10098495_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2021%20-%20data%20compression%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-113370-dt-content-rid-10098495_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 21 - data compression(1).pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-22-DNS"><a href="#Lec-22-DNS" class="headerlink" title="Lec-22 DNS"></a>Lec-22 DNS</h1><ul>
-<li><p>什么是DNS？</p>
+<h1>Lec-22 DNS</h1>
+<ul>
+<li>
+<p>什么是DNS？</p>
 <ul>
 <li>DNS（Domain Name System，域名系统）是因特网的一项服务，它作为域名和IP地址相互映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。</li>
 </ul>
 </li>
-<li><p>DNS cache</p>
+<li>
+<p>DNS cache</p>
 <ul>
 <li>Once (any) name server learns mapping, it caches mapping</li>
 <li>DNS Caching Exists in Every Place of the Hierarchy</li>
 </ul>
 </li>
-<li><p>实例：How to Reach shanghaitech.edu.cn?</p>
+<li>
+<p>实例：How to Reach <a target="_blank" rel="noopener" href="http://shanghaitech.edu.cn">shanghaitech.edu.cn</a>?</p>
 <ul>
-<li>Check local cache (assume DNS miss) to find IP of shanghaitech.edu.cn</li>
-<li>Check local DNS server to find IP of shanghaitech.edu.cn</li>
-<li>Local DNS server resolves IP of shanghaitech.edu.cn</li>
-<li>Connect to the IP of shanghaitech.edu.cn</li>
+<li>Check local cache (assume DNS miss) to find IP of <a target="_blank" rel="noopener" href="http://shanghaitech.edu.cn">shanghaitech.edu.cn</a></li>
+<li>Check local DNS server to find IP of <a target="_blank" rel="noopener" href="http://shanghaitech.edu.cn">shanghaitech.edu.cn</a></li>
+<li>Local DNS server resolves IP of <a target="_blank" rel="noopener" href="http://shanghaitech.edu.cn">shanghaitech.edu.cn</a></li>
+<li>Connect to the IP of <a target="_blank" rel="noopener" href="http://shanghaitech.edu.cn">shanghaitech.edu.cn</a></li>
 </ul>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-23-Email-Web"><a href="#Lec-23-Email-Web" class="headerlink" title="Lec-23 Email &amp; Web"></a>Lec-23 Email &amp; Web</h1><ul>
-<li>PPT ： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114003-dt-content-rid-10172198_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2023%20-%20email%20%26%20web%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114003-dt-content-rid-10172198_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2023%20-%20email%20%26%20web%281%29.pdf</a></li>
+<h1>Lec-23 Email &amp; Web</h1>
+<ul>
+<li>PPT ： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114003-dt-content-rid-10172198_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2023%20-%20email%20%26%20web%281%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114003-dt-content-rid-10172198_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 23 - email %26 web(1).pdf</a></li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-24-FTP-P2P"><a href="#Lec-24-FTP-P2P" class="headerlink" title="Lec-24 FTP &amp; P2P"></a>Lec-24 FTP &amp; P2P</h1><ul>
-<li><p>FTP (File Transfer Protocol)</p>
-</li>
-<li><p>P2P (peer to peer)</p>
+<h1>Lec-24 FTP &amp; P2P</h1>
 <ul>
-<li><strong>BitTorrent</strong><ul>
+<li>
+<p>FTP (File Transfer Protocol)</p>
+</li>
+<li>
+<p>P2P (peer to peer)</p>
+<ul>
+<li><strong>BitTorrent</strong>
+<ul>
 <li>首先一个人作为资源发布者创建种子，之后其他下载的人也作为服务器提供下载，也就是说下的人越多下载越快。</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>There is also other you should know (PPT)： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114121-dt-content-rid-10209547_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2024%20-%20ftp%20%26%20p2p%282%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114121-dt-content-rid-10209547_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2024%20-%20ftp%20%26%20p2p%282%29.pdf</a></p>
+<li>
+<p>There is also other you should know (PPT)： <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114121-dt-content-rid-10209547_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2024%20-%20ftp%20%26%20p2p%282%29.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114121-dt-content-rid-10209547_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 24 - ftp %26 p2p(2).pdf</a></p>
 </li>
 </ul>
 <ul>
 <li><a href="#top">Back to top</a></li>
 </ul>
-<h1 id="Lec-25-Network-Security"><a href="#Lec-25-Network-Security" class="headerlink" title="Lec-25 Network Security"></a>Lec-25 Network Security</h1><ul>
-<li><p>may replenish later</p>
+<h1>Lec-25 Network Security</h1>
+<ul>
+<li>
+<p>may replenish later</p>
 </li>
-<li><p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114489-dt-content-rid-10269749_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2025%20-%20security.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114489-dt-content-rid-10269749_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2025%20-%20security.pdf</a></p>
+<li>
+<p>PPT : <a target="_blank" rel="noopener" href="https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114489-dt-content-rid-10269749_1/courses/CS120-100796-4579-2023-20241/CS120%20Lec%2025%20-%20security.pdf">https://elearning.shanghaitech.edu.cn:8443/bbcswebdav/pid-114489-dt-content-rid-10269749_1/courses/CS120-100796-4579-2023-20241/CS120 Lec 25 - security.pdf</a></p>
 </li>
 </ul>
 <ul>
@@ -1582,7 +1871,6 @@
 
   
   
-
 
 
 
@@ -1776,49 +2064,6 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-
-        Fluid.events.registerRefreshCallback(function() {
-          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
-            MathJax.startup.document.state(0);
-            MathJax.texReset();
-            MathJax.typeset();
-            MathJax.typesetPromise();
-          }
-        });
-      </script>
-    
-
-  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
